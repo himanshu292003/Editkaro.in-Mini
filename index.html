@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Video Editing Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Editkaro.in</div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link" data-section="home">Home</a></li>
+                <li>
+                    <a href="#" class="nav-link" data-section="categories">Categories</a>
+                    <div class="dropdown">
+                        <a href="#" data-category="all">All Videos</a>
+                        <a href="#" data-category="Short Form">Short-form</a>
+                        <a href="#" data-category="Long Video">Long-form</a>
+                        <a href="#" data-category="Gaming Video">Gaming</a>
+                        <a href="#" data-category="Football Edits">Football</a>
+                        <a href="#" data-category="Ecommerce ADs">eCommerce</a>
+                        <a href="#" data-category="Documentary Style">Documentary</a>
+                        <a href="#" data-category="Color Grading">Color Grading</a>
+                        <a href="#" data-category="Anime Long Form">Anime</a>
+                        <a href="#" data-category="Ads">Ads</a>
+                    </div>
+                </li>
+                <li><a href="#" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Editkaro.in</h1>
+        <p class="subtitle">Professional Video Editing Portfolio</p>
+    </section>
+
+    <main>
+        <section id="portfolio" class="section">
+            <div class="category-sections">
+                <button class="category-button active" data-category="all">All Videos</button>
+                <button class="category-button" data-category="Short Form">Short Form</button>
+                <button class="category-button" data-category="Long Video">Long-form</button>
+                <button class="category-button" data-category="Gaming Video">Gaming Video</button>
+                <button class="category-button" data-category="Football Edits">Football</button>
+                <button class="category-button" data-category="Ecommerce ADs">eCommerce</button>
+                <button class="category-button" data-category="Documentary Style">Documentary</button>
+                <button class="category-button" data-category="Color Grading">Color Grading</button>
+                <button class="category-button" data-category="Anime Long Form">Anime</button>
+                <button class="category-button" 
+
+ data-category="Ads">Ads</button>
+            </div>
+            <div class="video-grid" id="videoGrid">
+            </div>
+        </section>
+
+        <section id="about" class="section about-section" style="display: none;">
+            <h2>About Editkaro.in</h2>
+            <p>Editkaro.in is a professional video editing agency dedicated to creating high-quality, engaging content for various platforms and industries. Our team of skilled editors combines creativity with technical expertise to deliver stunning visual stories that captivate audiences and elevate brands.</p>
+            <p>With years of experience in the field, we specialize in a wide range of video editing styles, from short-form content for social media to long-form documentaries and everything in between. Our passion for storytelling and attention to detail ensures that every project we undertake is crafted to perfection.</p>
+            <p>At Editkaro.in, we believe in the power of visual communication and strive to help our clients make a lasting impact through compelling video content. Whether you're a content creator, business owner, or filmmaker, we're here to bring your vision to life.</p>
+        </section>
+
+        <section id="contact" class="section contact-section" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Ready to start your next video project? Get in touch with us today!</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="videoModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <iframe id="videoPlayer" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Editkaro.in is a professional video editing agency specializing in creating high-quality content for various platforms and industries.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-section="categories">Categories</a></li>
+                    <li><a href="#" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact With Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
